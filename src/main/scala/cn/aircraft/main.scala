@@ -21,7 +21,7 @@ def aircraft = Native.loadLibrary("libaircraft",classOf[CLibrary]).asInstanceOf[
 object main {
   import akka.actor.ActorSystem
   import akka.actor.Props
-    def main(args: Array[String])={ 
+    def main(args: Array[String]):Unit={
       library.system.puts("Hello, World") 
       library.aircraft
       val system = ActorSystem("aircraftsystem")
