@@ -1,0 +1,8 @@
+language: scala
+jdk: oraclejdk8
+scala:
+   - 2.11.8
+   env: BUILD="base"
+   script:
+      - sbt -jvm-opts main/scala/main.main compile
+      - sbt -jvm-opts main/scala/main.main test
